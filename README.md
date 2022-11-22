@@ -9,6 +9,4 @@ Also, the original dataset has the "keyword" column not well formatted into a li
 
 I have formated everything for making it almost ready to use in NLP. You may need to filter the dataset a bit more, or maybe tokenize, etc... But that's on you ;) 
 
-And I changed the format from .csv to .json .
-
 
