@@ -1,0 +1,26 @@
+# .github/workflows/app.yaml
+name: Upload to Huggin Face
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: Upload dataset to HugginFace
+        env: 
+        HUGGINGFACE_TOKEN: ${{secrets.HUGGINGFACE_TOKEN}
+        run: |
+          python3 upload_hg.py
