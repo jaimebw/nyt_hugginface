@@ -21,6 +21,6 @@ jobs:
           pip install -r requirements.txt
       - name: Upload dataset to HugginFace
         env: 
-          HUGGINGFACE_TOKEN: ${{secrets.HUGGINGFACE_TOKEN}
+          HUGGINGFACE_TOKEN: ${{secrets.HUGGINGFACE_TOKEN}}
         run: |
           python3 upload_hg.py
