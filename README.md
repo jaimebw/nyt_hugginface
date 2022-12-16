@@ -1,9 +1,9 @@
 # Repo for uploading NYT articles Kaggle dataset to the hugginface repo
 
 The code in this repo is for automatically uploading the latest code base to the [HugginFace repository](https://huggingface.co/datasets/jaimebw/nyt_dataset).
-Hopefully, this won't be touched anymore
+Hopefully, this won't be touched anymore. This repo was created for my CS 525 final project.
 
-## What has been doen to the dataset?
+## What has been done to the dataset?
 The [original data](https://www.kaggle.com/datasets/brendanmiles/nyt-news-dataset-20082021) had not been cleaned from abstracts/title that were incomplete nor repeated abstracts/titles. 
 Also, the original dataset has the "keyword" column not well formatted into a list.
 
